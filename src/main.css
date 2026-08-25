@@ -1,0 +1,50 @@
+:root {
+  --color-accent:   #5fd9e0;
+  --color-bg:       #163459;
+  --color-hover:    #1d4477;
+  --color-active:   #0e2c52;
+  --color-group:    #10263f;
+  --color-row:      #0e1927;
+  --color-on-bg:    #ffffff;
+  --color-on-bg-dim:#8eaecf;
+  --radius-md:      12;
+}
+
+.title       { font-size: 26; text-color: var(--color-on-bg); }
+.caption     { font-size: 13; text-color: var(--color-on-bg-dim); }
+.group       { bg: var(--color-group); radius: var(--radius-md); }
+.group-title { font-size: 15; text-color: var(--color-accent); }
+
+.kbd {
+  font-size: 13;
+  text-color: var(--color-accent);
+  bg: var(--color-row);
+  radius: 6;
+  padding: 4 10;
+  text-align: center;
+}
+
+.primary {
+  bg: var(--color-bg);
+  hover-bg: var(--color-hover);
+  press-bg: var(--color-active);
+  text-color: var(--color-on-bg);
+  radius: var(--radius-md);
+  text-align: center;
+  font-size: 15;
+}
+.primary:focus { outline: 2 var(--color-accent); }
+
+.ghost {
+  bg: var(--color-group);
+  hover-bg: var(--color-hover);
+  text-color: var(--color-on-bg-dim);
+  radius: var(--radius-md);
+  text-align: center;
+  font-size: 13;
+}
+.ghost:focus { outline: 2 var(--color-accent); }
+
+.log-row  { bg: var(--color-row); radius: 8; padding: 0 10; }
+.log-kind { font-size: 12; text-color: var(--color-accent); }
+.log-text { font-size: 13; text-color: var(--color-on-bg); }
